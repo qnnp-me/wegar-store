@@ -10,6 +10,9 @@ export default defineConfig({
       tsconfigPath: './tsconfig.app.json',
     }),
   ],
+  define: {
+    'process.env': process.env
+  },
   build: {
     lib: {
       name: 'WegarPackageWegarStore',

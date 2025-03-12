@@ -46,5 +46,8 @@
   "main": "./dist/index.mjs",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10"
   }
 }
