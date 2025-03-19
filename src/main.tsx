@@ -2,6 +2,7 @@ import {createRoot} from 'react-dom/client'
 import {getStore, useStore} from "./store";
 import {useEffect, useState} from "react";
 
+
 function App() {
   const [state, setState] = useState(0)
   const [store, setStore] = useStore('count', 0)
