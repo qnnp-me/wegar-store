@@ -1,3 +1,6 @@
 export * from './getStore'
 export * from './useStore'
-export type WegarStores = object
+
+export interface WegarStores {
+  name: never
+}
