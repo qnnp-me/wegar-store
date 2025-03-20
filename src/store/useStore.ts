@@ -10,5 +10,5 @@ export const useStore = <T extends WegarStores = WegarStores, K extends keyof T 
       setState(state.state as S)
     });
   }, []);
-  return [state, store.getState().setState] as const
+  return [state, store.getState().setState as (state: S | ((state: S) => S)) => void] as const
 }
