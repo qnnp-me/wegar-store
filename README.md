@@ -31,3 +31,14 @@ const updateState = () => {
   getState().setState(getState().state + 1)
 }
 ```
+
+## 定义 Store 类型
+```ts
+// types/stores.d.ts
+export * from 'wegar-store'
+declare module 'wegar-store' {
+  export interface WegarStores {
+    'count': number
+  }
+}
+```
