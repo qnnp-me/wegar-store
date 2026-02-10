@@ -1,5 +1,8 @@
 declare module 'wegar-store' {
-  export declare interface WegarStores {
+  export interface WegarStores {
+    count: number
+  }
+  export interface WegarStorages {
     count: number
   }
 }
